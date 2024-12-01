@@ -53,7 +53,7 @@ export const ProductService = {
             {
                 id: '1029',
                 code: 'gwuby345v',
-                name: 'Yoga Set',
+                name: 'Yoga Set dev',
                 description: 'Product Description lorem hello device bdb bdbd bdbdbnr rnnrnrn Description lorem hello device bdb bdbd bdbdbnr rnnrnrn',
                 image: 'yoga-set.jpg',
                 price: 20,
