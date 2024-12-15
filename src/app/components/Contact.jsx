@@ -22,14 +22,14 @@ const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-        const response = await fetch('http://localhost:4000/send-email', {
+        const response = await fetch('https://udaan-digital-backend.onrender.com/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                to: formData.email, // Assuming email is the recipient
-                subject: formData.subject, // Add formData.subject
+                to: formData.email, 
+                subject: formData.subject,
                 text: formData.message,
             }),
         });
