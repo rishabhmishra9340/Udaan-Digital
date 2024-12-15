@@ -226,16 +226,7 @@ export default function ContactPage() {
         Our Location
       </h2>
       <div className="relative h-full rounded-lg shadow-lg overflow-hidden">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.3916808890754!2d75.89315517393418!3d22.750841126416613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396302aa0cd59c5d%3A0x57ef6ab67c13ea2b!2sVijay%20Nagar%20Square%2C%20Indore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1733066541106!5m2!1sen!2sin"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          className="w-full h-full"
-        ></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.6814327810143!2d75.29801267392854!3d22.591015132297795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39623700697721bf%3A0xb3c36cdcb9ad0a93!2sUDAAN%20Studio!5e0!3m2!1sen!2sin!4v1734275352154!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
     </>
