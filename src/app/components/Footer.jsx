@@ -117,104 +117,91 @@ export default function Footer() {
         </div>
 
         <div class="col-span-2 sm:col-span-1">
-          <p class="font-medium text-gray-900">Services</p>
+          <p class="font-bold text-gray-900">Our Expertise</p>
 
           <ul class="mt-6 space-y-4 text-sm">
             <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> 1on1 Coaching </a>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Master Planning </a>
             </li>
 
             <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Company Review </a>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Architectural Design </a>
             </li>
 
             <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Urban Planning </a>
             </li>
 
             <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> HR Consulting </a>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Infrastructure Planning </a>
             </li>
 
             <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> SEO Optimisation </a>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Interior Design </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> BIM </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Project Management / EPC </a>
             </li>
           </ul>
         </div>
 
         <div class="col-span-2 sm:col-span-1">
-          <p class="font-medium text-gray-900">Company</p>
+          <p class="font-bold text-gray-900">More Expertise</p>
 
           <ul class="mt-6 space-y-4 text-sm">
+
             <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> About </a>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Structural Design </a>
             </li>
 
             <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Meet the Team </a>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Electrical Design </a>
             </li>
-
             <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Mechanical Design </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Plumbing Design </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Fire Protection Design </a>
             </li>
           </ul>
         </div>
 
         <div class="col-span-2 sm:col-span-1">
-          <p class="font-medium text-gray-900">Helpful Links</p>
+          <p class="font-bold text-gray-900">Company</p>
 
           <ul class="mt-6 space-y-4 text-sm">
             <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Contact </a>
+              <a href="/about" class="text-gray-700 transition hover:opacity-75"> About Us </a>
             </li>
 
             <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> FAQs </a>
+              <a href="/projects" class="text-gray-700 transition hover:opacity-75"> Projects </a>
             </li>
 
             <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Live Chat </a>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Services </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Realty </a>
+            </li>
+            <li>
+              <a href="/contact" class="text-gray-700 transition hover:opacity-75"> Contact Us </a>
             </li>
           </ul>
         </div>
-
-        <div class="col-span-2 sm:col-span-1">
-          <p class="font-medium text-gray-900">Legal</p>
-
-          <ul class="mt-6 space-y-4 text-sm">
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Accessibility </a>
-            </li>
-
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Returns Policy </a>
-            </li>
-
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Refund Policy </a>
-            </li>
-
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Hiring Statistics </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-span-2 sm:col-span-1">
-          <p class="font-medium text-gray-900">Downloads</p>
-
-          <ul class="mt-6 space-y-4 text-sm">
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Marketing Calendar </a>
-            </li>
-
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> SEO Infographics </a>
-            </li>
-          </ul>
-        </div>
-
-        <ul class="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end">
+        <div class="col-span-2 sm:col-span-1 w-96">
+        <h4 class="text-3xl fonat-semibold text-blueGray-700 mb-4">Let us keep in touch!</h4>
+        <h5 class="text-lg mt-0 mb-8 text-blueGray-600">
+          Find us on any of these platforms, we respond 1-2 business days.
+        </h5>
+        <div class="mt-6 lg:mb-0 mb-6">
+        <ul class="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-start">
           <li>
             <a
               href="#"
@@ -308,28 +295,13 @@ export default function Footer() {
             </a>
           </li>
         </ul>
+        </div>
+      </div>
+      
+
       </div>
     </div>
 
-    <div class="mt-8 border-t border-gray-100 pt-8">
-      <div class="sm:flex sm:justify-between">
-        <p class="text-xs text-gray-500">&copy; 2022. Company Name. All rights reserved.</p>
-
-        <ul class="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
-          <li>
-            <a href="#" class="text-gray-500 transition hover:opacity-75"> Terms & Conditions </a>
-          </li>
-
-          <li>
-            <a href="#" class="text-gray-500 transition hover:opacity-75"> Privacy Policy </a>
-          </li>
-
-          <li>
-            <a href="#" class="text-gray-500 transition hover:opacity-75"> Cookies </a>
-          </li>
-        </ul>
-      </div>
-    </div>
   </div>
 </footer>
 

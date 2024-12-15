@@ -60,7 +60,7 @@ export default function CarouselFeed() {
     };
 
     return (
-        <div className="card m-2"  style={{
+        <div className="card m-6 rounded-md"  style={{
             background: "url('/bg-cards.jpeg')",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",

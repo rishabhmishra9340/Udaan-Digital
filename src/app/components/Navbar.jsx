@@ -1,14 +1,19 @@
-'use client'
+'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation'; // Import useRouter from Next.js
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false); // State to manage the menu's visibility
+  const router = useRouter(); // Initialize useRouter
 
   // Function to toggle the menu visibility
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  // Function to check if the current page is active
+  const isActive = (path) => router.pathname == path ? 'text-clip text-green-500' : 'text-gray-700';
 
   return (
     <>
@@ -32,11 +37,43 @@ export default function Navbar() {
         {/* Responsive Menu */}
         <div className={`md:flex md:items-center md:w-auto w-full ${menuOpen ? 'block' : 'hidden'}`} id="menu">
           <nav>
-            <ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
-              <li><a className="md:p-4 py-3 px-0 block text-xl" href="/about">About-Us</a></li>
-              <li><a className="md:p-4 py-3 px-0 block text-xl" href="#">Plans</a></li>
-              <li><a className="md:p-4 py-3 px-0 block text-xl" href="/gallary">Gallary</a></li>
-              <li><a className="md:p-4 py-3 px-0 block md:mb-0 mb-2 text-xl" href="/contact">Contact Us</a></li>
+            <ul className="md:flex items-center justify-between text-base pt-4 md:pt-0">
+              <li>
+                <a 
+                  className={`md:p-4 py-3 px-0 block text-xl ${isActive('/')}`} 
+                  href="/">Home
+                </a>
+              </li>
+              <li>
+                <a 
+                  className={`md:p-4 py-3 px-0 block text-xl ${isActive('/about')}`} 
+                  href="/about">About-Us
+                </a>
+              </li>
+              <li>
+                <a 
+                  className={`md:p-4 py-3 px-0 block text-xl ${isActive('/services')}`} 
+                  href="#">Services
+                </a>
+              </li>
+              <li>
+                <a 
+                  className={`md:p-4 py-3 px-0 block text-xl ${isActive('/gallary')}`} 
+                  href="/projects">Projects
+                </a>
+              </li>
+              <li>
+                <a 
+                  className={`md:p-4 py-3 px-0 block text-xl ${isActive('/gallary')}`} 
+                  href="/gallary">Realty
+                </a>
+              </li>
+              <li>
+                <a 
+                  className={`md:p-4 py-3 px-0 block md:mb-0 mb-2 text-xl ${isActive('/contact')}`} 
+                  href="/contact">Contact Us
+                </a>
+              </li>
             </ul>
           </nav>
         </div>

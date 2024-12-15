@@ -19,7 +19,6 @@ export default function Home() {
             <h1 class="text-4xl lg:text-6xl font-bold">Find your <span class="text-green-700">tour</span> stuff for your room</h1>
             <div class="w-20 h-2 bg-green-700 my-4"></div>
             <p class="text-xl mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maiores neque eaque ea odit placeat, tenetur illum distinctio nulla voluptatum a corrupti beatae tempora aperiam quia id aliquam possimus aut.</p>
-            <button class="bg-green-500 text-white text-2xl font-medium px-4 py-2 rounded shadow">Learn More</button>
           </div>
         </header>
       </div>
