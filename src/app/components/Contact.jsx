@@ -157,9 +157,7 @@ export default function ContactPage() {
                 {/* <p class="text-sm font-semibold text-gray-800">I am interested in...</p> */}
 
                 <div class="space-y-4 max-lg:mt-4">
-                    <button type="button" class="px-4 py-2 rounded-lg bg-blue-400 text-white text-sm tracking-wider font-medium outline-none border-2 border-blue-400 mr-4">Web design</button>
-                    <button type="button" class="px-4 py-2 rounded-lg bg-transparent text-gray-800 text-sm tracking-wider font-medium outline-none border-2 border-gray-300 mr-4">Graphic design</button>
-                    <button type="button" class="px-4 py-2 rounded-lg bg-transparent text-gray-800 text-sm tracking-wider font-medium outline-none border-2 border-gray-300">Design system</button>
+                    <button type="button" class="px-4 py-2 rounded-lg bg-blue-400 text-white text-sm tracking-wider font-medium outline-none border-2 border-blue-400 mr-4">We are always there for you</button>
                 </div>
 
                 <form className="mt-8 space-y-4" onSubmit={handleSubmit}>
