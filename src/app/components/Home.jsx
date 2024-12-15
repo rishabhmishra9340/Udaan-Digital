@@ -8,7 +8,7 @@ export default function Home() {
       <div class="container mx-auto h-full sm:p-10">
         <nav class="flex px-4 justify-between items-center">
           <div class="text-4xl font-bold">
-            Vayabhraman<span class="text-green-700">.</span>
+            Udaan Digital<span class="text-green-700">.</span>
           </div>
           <div>
             <img src="https://image.flaticon.com/icons/svg/497/497348.svg" alt="" class="w-8"></img>

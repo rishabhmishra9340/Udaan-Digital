@@ -1,8 +1,54 @@
+'use client'
+import { useState } from "react";
 export default function ContactPage() {
+
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        subject: '',
+        message: "",
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
+
+
+const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+        const response = await fetch('http://localhost:4000/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                to: formData.email, // Assuming email is the recipient
+                subject: formData.subject, // Add formData.subject
+                text: formData.message,
+            }),
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const result = await response.json();
+        console.log('Email sent successfully:', result);
+    } catch (error) {
+        console.error('Error sending email:', error);
+    }
+};
+
     return (
         <>
         <div class="mt-6 max-w-6xl max-lg:max-w-3xl mx-auto bg-blue-600 rounded-lg">
-        <div class="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 font-[sans-serif]">
+        <div class="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 font-[sans-serif]" >
             <div>
                 <h1 class="text-4xl font-bold text-white">Get in Touch</h1>
                 <p class="text-sm text-gray-300 mt-4 leading-relaxed">Have some big idea or brand to develop and need help? Then reach out we would love to hear about your project  and provide help.</p>
@@ -81,19 +127,57 @@ export default function ContactPage() {
                     <button type="button" class="px-4 py-2 rounded-lg bg-transparent text-gray-800 text-sm tracking-wider font-medium outline-none border-2 border-gray-300">Design system</button>
                 </div>
 
-                <form class="mt-8 space-y-4">
-                    <input type='text' placeholder='Name'
-                        class="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-blue-400" />
-                    <input type='email' placeholder='Email'
-                        class="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-blue-400" />
-                    <input type='text' placeholder='Subject'
-                        class="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-blue-400" />
-                    <textarea placeholder='Message' rows="6"
-                        class="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 outline-blue-400"></textarea>
-                    <button type='button'
-                        class="text-white bg-blue-400 hover:bg-blue-400 tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full !mt-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' class="mr-2" viewBox="0 0 548.244 548.244">
-                            <path fill-rule="evenodd" d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z" clip-rule="evenodd" data-original="#000000" />
+                <form className="mt-8 space-y-4" onSubmit={handleSubmit}>
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-blue-400"
+                        value={formData.name}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-blue-400"
+                        value={formData.email}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type="text"
+                        name="subject"
+                        placeholder="Subject"
+                        className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-blue-400"
+                        value={formData.subject}
+                        onChange={handleChange}
+                    />
+                    <textarea
+                        name="message"
+                        placeholder="Message"
+                        rows="6"
+                        className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 outline-blue-400"
+                        value={formData.message}
+                        onChange={handleChange}
+                    ></textarea>
+                    <button
+                        type="submit"
+                        className="text-white bg-blue-400 hover:bg-blue-400 tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full !mt-6"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16px"
+                            height="16px"
+                            fill="#fff"
+                            className="mr-2"
+                            viewBox="0 0 548.244 548.244"
+                        >
+                            <path
+                                fillRule="evenodd"
+                                d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z"
+                                clipRule="evenodd"
+                                data-original="#000000"
+                            />
                         </svg>
                         Send Message
                     </button>
@@ -122,4 +206,3 @@ export default function ContactPage() {
     </>
     );
   }
-  
