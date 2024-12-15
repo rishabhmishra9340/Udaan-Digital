@@ -6,42 +6,74 @@ import React from 'react'
 export default function Footer() {
   const [email, setEmail] = useState(''); // State to store input value
   const [message, setMessage] = useState('');
-  
+  const [showPopup, setShowPopup] = useState(false); // State to control popup visibility
+
   const handleSubmit = async (e) => {
-    e.preventDefault(); 
-    if (!email) { 
-      setMessage('Please enter a valid email address.'); 
-      return; 
+    e.preventDefault();
+
+    if (!email) {
+      setMessage('Please enter a valid email address.');
+      return;
     }
-    
-    // Define the message to be sent in the email
+
     const emailContent = {
       email,
-      subject: "Newsletter Signup",
-      body: "Thank you for signing up for our newsletter! We will send the latest updates to this email address.",
+      subject: 'Newsletter Signup',
+      body: 'Thank you for signing up for our newsletter! We will send the latest updates to this email address.',
     };
 
     try {
-      const response = await fetch('https://udaan-digital-backend.onrender.com/send-email-to-user', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(emailContent), 
-      });
-      const result = await response.json();
+      const response = await fetch(
+        'https://udaan-digital-backend.onrender.com/send-email-to-user',
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(emailContent),
+        }
+      );
+
       if (response.ok) {
-        setMessage('Email sent successfully!');
+        const result = await response.json();
+        setMessage(result.message || 'Email sent successfully!');
+        setShowPopup(true); // Show popup on success
       } else {
-        setMessage(result.error || 'Something went wrong.');
+        const errorText = await response.text();
+        setMessage(`Error: ${errorText}`);
+        setShowPopup(true); // Show popup on error
       }
     } catch (error) {
       console.error('Error:', error);
       setMessage('Failed to send email.');
+      setShowPopup(true); 
     }
+
     setEmail('');
+    setTimeout(() => {
+      setShowPopup(false);
+    }, 3000);
   };
+
+ 
+
 
   return (
     <>
+
+{showPopup && (
+        <div className="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+          <div className="flex">
+            <div className="py-1">
+              <svg className="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
+              </svg>
+            </div>
+            <div>
+              <p className="font-bold">Status: {message}</p>
+              <p className="text-sm">{message}</p>
+            </div>
+          </div>
+        </div>
+      )}
       <footer className="bg-white">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="lg:flex lg:items-start lg:gap-8">
@@ -82,11 +114,11 @@ export default function Footer() {
                     </button>
                   </div>
                 </form>
-                {message && (
+                {/* {message && (
               <div className="mt-4 text-center text-sm text-teal-500">
                 {message}
               </div>
-            )}
+            )} */}
         </div>
 
         <div class="col-span-2 sm:col-span-1">

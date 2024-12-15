@@ -8,6 +8,8 @@ export default function ContactPage() {
         subject: '',
         message: "",
     });
+    const [message, setMessage] = useState('');
+    const [showPopup, setShowPopup] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -18,35 +20,68 @@ export default function ContactPage() {
     };
 
 
-const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-        const response = await fetch('https://udaan-digital-backend.onrender.com/send-email', {
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+    
+        try {
+          const response = await fetch('https://udaan-digital-backend.onrender.com/send-email', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
+              'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                to: formData.email, 
-                subject: formData.subject,
-                text: formData.message,
+              to: formData.email,
+              subject: formData.subject,
+              text: formData.message,
             }),
-        });
-
-        if (!response.ok) {
+          });
+    
+          if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
+          }
+    
+          const result = await response.json();
+          console.log('Email sent successfully:', result);
+          setMessage('Email sent successfully!');
+          setShowPopup(true); // Show success popup
+        } catch (error) {
+          console.error('Error sending email:', error);
+          setMessage('Failed to send email. Please try again later.');
+          setShowPopup(true); // Show error popup
         }
-
-        const result = await response.json();
-        console.log('Email sent successfully:', result);
-    } catch (error) {
-        console.error('Error sending email:', error);
-    }
-};
+    
+        // Hide popup after 3 seconds
+        setTimeout(() => {
+          setShowPopup(false);
+        }, 3000);
+    
+        // Clear form data after submission
+        setFormData({
+          name: "",
+          email: "",
+          subject: '',
+          message: "",
+        });
+      };
+    
 
     return (
         <>
+        {showPopup && (
+        <div className="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+          <div className="flex">
+            <div className="py-1">
+              <svg className="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
+              </svg>
+            </div>
+            <div>
+              <p className="font-bold">Status: {message}</p>
+              <p className="text-sm">{message}</p>
+            </div>
+          </div>
+        </div>
+      )}
         <div class="mt-6 max-w-6xl max-lg:max-w-3xl mx-auto bg-blue-600 rounded-lg">
         <div class="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 font-[sans-serif]" >
             <div>

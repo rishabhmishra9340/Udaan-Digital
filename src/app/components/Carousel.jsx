@@ -60,17 +60,18 @@ export default function CarouselFeed() {
     };
 
     return (
-        <div className="card"  style={{
-            background: "url('/bg.svg')",
+        <div className="card m-2"  style={{
+            background: "url('/bg-cards.jpeg')",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}>
             <div className="text-center mb-6">
                 <h2 className="text-2xl font-bold text-gray-900 p-2">Welcome to Our Community</h2>
                 <h3 className="text-xl font-semibold text-gray-700 p-2">Join us and connect with amazing people</h3>
-                <p className="text-gray-500 p-6">Explore our diverse range of products and services that cater to all your needs.</p>
+                {/* <p className="text-gray-500 p-6">Explore our diverse range of products and services that cater to all your needs.</p> */}
             </div>
             
+           
             <Carousel
                 value={products}
                 numVisible={3}
@@ -81,6 +82,7 @@ export default function CarouselFeed() {
                 autoplayInterval={3000}
                 itemTemplate={productTemplate}
             />
+             <div className='mt-6 display-none'>0</div>
         </div>
     );
 }
