@@ -114,11 +114,6 @@ export default function Footer() {
                     </button>
                   </div>
                 </form>
-                {/* {message && (
-              <div className="mt-4 text-center text-sm text-teal-500">
-                {message}
-              </div>
-            )} */}
         </div>
 
         <div class="col-span-2 sm:col-span-1">
