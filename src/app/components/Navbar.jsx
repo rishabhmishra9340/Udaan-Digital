@@ -15,6 +15,11 @@ export default function Navbar() {
   // Function to check if the current page is active
   const isActive = (path) => router.pathname == path ? 'text-clip text-green-500' : 'text-gray-700';
 
+  // Function to handle navigation on click
+  const handleNavigation = (path) => {
+    router.push(path); // Navigate to the specified path
+  };
+
   return (
     <>
       <header className="lg:px-16 px-4 bg-white flex flex-wrap items-center py-4 shadow-md">
@@ -39,40 +44,52 @@ export default function Navbar() {
           <nav>
             <ul className="md:flex items-center justify-between text-base pt-4 md:pt-0">
               <li>
-                <a 
-                  className={`md:p-4 py-3 px-0 block text-xl ${isActive('/')}`} 
-                  href="/">Home
-                </a>
+                <button
+                  className={`md:p-4 py-3 px-0 block text-xl ${isActive('/')}`}
+                  onClick={() => handleNavigation('/')}
+                >
+                  Home
+                </button>
               </li>
               <li>
-                <a 
-                  className={`md:p-4 py-3 px-0 block text-xl ${isActive('/about')}`} 
-                  href="/about">About-Us
-                </a>
+                <button
+                  className={`md:p-4 py-3 px-0 block text-xl ${isActive('/about')}`}
+                  onClick={() => handleNavigation('/about')}
+                >
+                  About-Us
+                </button>
               </li>
               <li>
-                <a 
-                  className={`md:p-4 py-3 px-0 block text-xl ${isActive('/services')}`} 
-                  href="#">Services
-                </a>
+                <button
+                  className={`md:p-4 py-3 px-0 block text-xl ${isActive('/services')}`}
+                  onClick={() => handleNavigation('/service')}
+                >
+                  Services
+                </button>
               </li>
               <li>
-                <a 
-                  className={`md:p-4 py-3 px-0 block text-xl ${isActive('/gallary')}`} 
-                  href="/projects">Projects
-                </a>
+                <button
+                  className={`md:p-4 py-3 px-0 block text-xl ${isActive('/projects')}`}
+                  onClick={() => handleNavigation('/projects')}
+                >
+                  Projects
+                </button>
               </li>
               <li>
-                <a 
-                  className={`md:p-4 py-3 px-0 block text-xl ${isActive('/gallary')}`} 
-                  href="/gallary">Realty
-                </a>
+                <button
+                  className={`md:p-4 py-3 px-0 block text-xl ${isActive('/gallary')}`}
+                  onClick={() => handleNavigation('/career')}
+                >
+                  Realty
+                </button>
               </li>
               <li>
-                <a 
-                  className={`md:p-4 py-3 px-0 block md:mb-0 mb-2 text-xl ${isActive('/contact')}`} 
-                  href="/contact">Contact Us
-                </a>
+                <button
+                  className={`md:p-4 py-3 px-0 block md:mb-0 mb-2 text-xl ${isActive('/contact')}`}
+                  onClick={() => handleNavigation('/contact')}
+                >
+                  Contact Us
+                </button>
               </li>
             </ul>
           </nav>
