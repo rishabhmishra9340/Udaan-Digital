@@ -20,6 +20,7 @@ const OurOffices = () => {
   }, []);
 
   return (
+    <>
     <div className="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 m-auto">
       {offices.map((office) => (
         <Link
@@ -78,6 +79,7 @@ const OurOffices = () => {
         </Link>
       ))}
     </div>
+    </>
   );
 };
 
