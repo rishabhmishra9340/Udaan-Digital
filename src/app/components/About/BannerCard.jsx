@@ -125,7 +125,7 @@ const ContentSection = ({ section }) => {
   }
 };
 
-const BannerCard = () => {
+export const BannerCard = () => {
   return (
     <section className="px-3 py-5 bg-neutral-100 lg:py-10">
       <div className="grid lg:grid-cols-2 items-center justify-items-center gap-5">
