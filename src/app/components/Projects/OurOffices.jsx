@@ -9,7 +9,7 @@ const OurOffices = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get("https://udaan-digital-backend.vercel.app/api/projects");
+        const response = await axios.get("https://udaan-digital-backend-1.onrender.com/api/projects");
         setOffices(response.data.projects);
       } catch (error) {
         console.error("Error fetching projects:", error);
