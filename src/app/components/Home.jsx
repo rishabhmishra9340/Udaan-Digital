@@ -19,7 +19,7 @@ export default function Home() {
               <div class="w-full">
                 <h1 class="text-4xl lg:text-6xl font-bold">Driven by a <span class="text-gray-700">passion</span> for excellence</h1>
                 <div class="w-20 h-2 bg-gray-700 my-4"></div>
-                <p class="text-xl mb-10">UDAAN Studio, Uplifting Designs Advancing Architecture in Nature's embrace, envisions a world where every structure tells a story of innovation, harmony, and sustainability.
+                <p class="text-xl mb-10">UDAAN Studio, Uplifting Designs Advancing Architecture in Natures embrace, envisions a world where every structure tells a story of innovation, harmony, and sustainability.
                 </p>
               </div>
             </header>

@@ -10,7 +10,7 @@ export default function Banner() {
         <div class="min-h-[350px] relative z-50 h-full max-w-6xl mx-auto flex flex-col justify-center items-center text-center text-white p-6">
           <h2 class="sm:text-4xl text-2xl font-bold mb-6">UDAAN Studio
           </h2>
-          <p class="sm:text-lg text-base text-center text-gray-200">Let’s make your dream space a reality.
+          <p class="sm:text-lg text-base text-center text-gray-200">Lets make your dream space a reality.
           </p>
         </div>
       </div>

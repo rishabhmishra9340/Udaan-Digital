@@ -171,7 +171,7 @@ export default function Footer() {
         <div class="col-span-2 sm:col-span-1 w-96">
                 <h4 class="text-3xl fonat-semibold text-blueGray-700 mb-4">Feel free to reach out!</h4>
         <h5 class="text-lg mt-0 mb-8 text-blueGray-600">
-                  Contact us today, and let’s shape the future together.
+                  Contact us today, and lets shape the future together.
         </h5>
         <div class="mt-6 lg:mb-0 mb-6">
         <ul class="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-start">
