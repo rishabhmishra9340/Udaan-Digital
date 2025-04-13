@@ -24,7 +24,7 @@ export default function Navbar() {
     <>
       <header className="w-full z-50 lg:px-16 px-4 bg-white flex flex-wrap items-center py-4 shadow-md border-b border-gray-200">
         <div className="flex-1 flex justify-between items-center">
-          <Image src='/GanpatiJi.jpg' width={50} height={50} alt='Logo' className='object-contain' />
+          <Image src='/Ganpati Ji png.png' width={50} height={50} alt='Logo' className='object-contain' />
         </div>
 
         {/* Hamburger Icon */}
