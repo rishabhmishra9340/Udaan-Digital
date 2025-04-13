@@ -14,31 +14,31 @@ const CardSection = () => {
                     title="Architectural Design"
                     description="Designing innovative and functional spaces that balance aesthetics and practicality."
                     link="#"
-                    icon="/engin.png"
+                    icon="/A.png"
                 />
                 <ReusableCard
                     title="Master Planning"
                     description="Creating comprehensive and sustainable plans for future-ready urban and rural developments."
                     link="#"
-                    icon="/arch.png"
+                    icon="/mP.png"
                 />
                 <ReusableCard
                     title="Interior Design"
                     description="Crafting interiors that combine elegance, comfort, and functionality to enhance daily living."
                     link="#"
-                    icon="/project.png"
+                    icon="/id.png"
                 />
                 <ReusableCard
                     title="Urban & Infrastructure Planning"
                     description="Developing efficient and sustainable infrastructure to support growing urban environments."
                     link="#"
-                    icon="/bar-summer-svgrepo-com.svg"
+                    icon="/ui.png"
                 />
                 <ReusableCard
                     title="Building Information Modeling (BIM)"
                     description="Utilizing advanced digital tools for precise design, construction, and project management."
                     link="#"
-                    icon="/bar-summer-svgrepo-com.svg"
+                    icon="/BIM.png"
                 />
             </div>
         </div>
