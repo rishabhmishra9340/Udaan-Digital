@@ -13,7 +13,7 @@ const ProjectDetail = () => {
 
     const fetchProject = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/project/${id}`);
+        const response = await axios.get(`http://udaan-digital-backend.vercel.app/api/project/${id}`);
         if (response.data.success) {
           setProject(response.data.project);
         } else {
@@ -34,12 +34,12 @@ const ProjectDetail = () => {
   return (
     <div className="p-6">
 
-      <img src={project.image} alt={project.name} className="mt-4 w-full h-96" />
-      <img src={project.imageadd} alt={project.name} className="mt-4 w-full h-96" />
-      <img src={project.imageadds} alt={project.name} className="mt-4 w-full h-96" />
-      <h1 className="text-3xl font-bold">{project.name}</h1>
-      <p className="mt-4 text-lg font-semibold">Location: {project.location}</p>
-      <p className="mt-4">{project.description}</p>
+      <img src={project.image} alt={project.name} className="mt-4 w-full h-auto" />
+      <img src={project.imageadd} alt={project.name} className="mt-4 w-full h-auto" />
+      <img src={project.imageadds} alt={project.name} className="mt-4 w-full h-auto" />
+      <h1 className="text-4xl font-bold bastia-font p-4 pt-10">{project.name}</h1>
+      <p className="text-gray-600 text-2xl futura-font p-4">{project.description}</p>
+      <p className="text-teal-500 font-medium text-2xl futura-font p-4">{project.location}</p>
     </div>
   );
 };

@@ -6,8 +6,8 @@ const ContentSection = ({ section }) => {
     case 'about':
       return (
         <div>
-          <h2 className="text-2xl font-semibold">About Us</h2>
-          <div className="mt-4 text-xl max-w-4xl max-w-[100%]">
+          <h2 className="text-2xl bastia-font">About Us</h2>
+          <div className="mt-4 text-xl max-w-4xl max-w-[100%] futura-font">
             <p>Udaan Studio is a forward-thinking architecture and real estate company, founded in 2024 by Ar. Harsh Prajapat, with a mission to transform spaces through innovative, sustainable, and client-centric designs.</p>
             <p>"Udaan" (meaning "Flight" in Hindi) represents the studio's aspiration to push the boundaries of architecture, design, and real estate, taking creativity to new heights.</p>
             <p>Guided by our philosophy of "Uplifting Designs Advancing Architecture in Nature's Embrace (UDAAN)," we craft spaces that seamlessly blend aesthetics, functionality, and sustainability.
@@ -33,11 +33,11 @@ const ContentSection = ({ section }) => {
           {/* <h2 className="text-2xl font-semibold">Our Team</h2> */}
           <div className="w-full mt-8 flex justify-start ml-14 items-end gap-12">
             <img className="h-96 rounded-md object-cover" src="/founder.jpg" alt="Team" />
-            <p className='text-5xl max-w-96'>Meet our
+            <p className='text-5xl max-w-96 bastia-font'>Meet our
               Founder, CEO &
               Principal Architect</p>
           </div>
-          <div>
+          <div className='futura-font'>
             <p className='m-5 p-2'>Ar. Harsh Prajapat is the visionary behind Udaan Studio, leading the firm with a passion for innovative, sustainable, and people-centric architecture. With a deep understanding of design, urban planning, and real estate, he envisions redefining the architectural landscape of India through creativity and excellence.</p>
             <p className='p-2 m-5 '> A graduate of NIT Bhopal (Maulana Azad National Institute of Technology, Bhopal), Ar. Harsh combines technical expertise with practical experience to craft functional, aesthetically inspiring, and eco-friendly spaces. His work spans residential, commercial, and urban planning projects, ensuring each structure tells a unique story of design and purpose.</p>
              

@@ -82,7 +82,7 @@ export default function ContactPage() {
                     </div>
                 </div>
             )}
-            <div class="mt-6 max-w-6xl max-lg:max-w-3xl mx-auto bg-blue-600 rounded-lg">
+            <div class="mt-6 max-w-6xl max-lg:max-w-3xl mx-auto bg-gray-600 rounded-lg">
                 <div class="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 font-[sans-serif]" >
                     <div>
                         <h1 class="text-4xl font-bold text-white">Get in Touch</h1>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                         </ul>
 
                         <ul class="flex mt-12 space-x-4">
-                            <li class="bg-blue-400 hover:bg-blue-400 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                            <li class="bg-gray-400 hover:bg-gray-400 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                 <a href="https://www.facebook.com/share/12EjB8cKrVa/">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill='#fff'
                                         viewBox="0 0 24 24">
@@ -131,7 +131,7 @@ export default function ContactPage() {
                                     </svg>
                                 </a>
                             </li>
-                            <li class="bg-blue-400 hover:bg-blue-400 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                            <li class="bg-gray-400 hover:bg-gray-400 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                 <a href="https://www.linkedin.com/company/udaan-studio/">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill='#fff'
                                         viewBox="0 0 511 512">
@@ -141,7 +141,7 @@ export default function ContactPage() {
                                     </svg>
                                 </a>
                             </li>
-                            <li class="bg-blue-400 hover:bg-blue-400 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                            <li class="bg-gray-400 hover:bg-gray-400 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                 <a href="https://www.instagram.com/udaan_studio_/">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill='#fff'
                                         viewBox="0 0 24 24">
@@ -151,14 +151,14 @@ export default function ContactPage() {
                                     </svg>
                                 </a>
                             </li>
-                            <li class="bg-blue-400 hover:bg-blue-400 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                            <li class="bg-gray-400 hover:bg-gray-400 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                 <a href="https://wa.me/916266009632" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="#fff" viewBox="0 0 24 24">
                                         <path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 .01 5.37.01 12a11.9 11.9 0 0 0 1.59 6l-1.63 5.95 6.11-1.6a11.9 11.9 0 0 0 5.92 1.51h.01C18.63 24 24 18.63 24 12a11.92 11.92 0 0 0-3.48-8.52ZM12 22a9.88 9.88 0 0 1-5-1.37l-.36-.21-3.63.95.97-3.54-.24-.37A9.93 9.93 0 1 1 12 22Zm5.3-7.69c-.29-.14-1.71-.84-1.98-.94s-.46-.14-.66.14-.76.94-.94 1.13-.35.21-.64.07a8.13 8.13 0 0 1-2.4-1.48 9.1 9.1 0 0 1-1.69-2.09c-.17-.29 0-.45.13-.59s.29-.35.43-.52.19-.29.29-.48a.55.55 0 0 0 0-.52c-.14-.15-.66-1.59-.9-2.18s-.48-.5-.66-.5h-.57a1.1 1.1 0 0 0-.79.37A3.31 3.31 0 0 0 6 9.69a5.76 5.76 0 0 0 1.21 3.36c.15.21 2.09 3.2 5.07 4.49a17.6 17.6 0 0 0 1.74.64 4.2 4.2 0 0 0 1.93.12 3.29 3.29 0 0 0 2.14-1.5 2.69 2.69 0 0 0 .19-1.5c-.09-.14-.26-.2-.55-.34Z" />
                                     </svg>
                                 </a>
                             </li>
-                            <li class="bg-blue-400 hover:bg-blue-400 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                            <li class="bg-gray-400 hover:bg-gray-400 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                 <a href="https://jsdl.in/DT-992JLYGHALJ" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="#fff" viewBox="0 0 24 24">
                                         <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1-.24 11.72 11.72 0 0 0 3.68.59 1 1 0 0 1 1 1v3.73a1 1 0 0 1-1 1A17.92 17.92 0 0 1 2 4a1 1 0 0 1 1-1h3.75a1 1 0 0 1 1 1 11.72 11.72 0 0 0 .58 3.68 1 1 0 0 1-.24 1z" />
@@ -173,7 +173,7 @@ export default function ContactPage() {
                         {/* <p class="text-sm font-semibold text-gray-800">I am interested in...</p> */}
 
                         <div class="space-y-4 max-lg:mt-4">
-                            <button type="button" class="px-4 py-2 rounded-lg bg-blue-400 text-white text-sm tracking-wider font-medium outline-none border-2 border-blue-400 mr-4">We are always there for you</button>
+                            <button type="button" class="px-4 py-2 rounded-lg bg-gray-400 text-white text-sm tracking-wider font-medium outline-none border-2 border-gray-400 mr-4">We are always there for you</button>
                         </div>
 
                         <form className="mt-8 space-y-4" onSubmit={handleSubmit}>
@@ -181,7 +181,7 @@ export default function ContactPage() {
                                 type="text"
                                 name="name"
                                 placeholder="Name"
-                                className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-blue-400"
+                                className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-gray-400"
                                 value={formData.name}
                                 onChange={handleChange}
                             />
@@ -189,7 +189,7 @@ export default function ContactPage() {
                                 type="email"
                                 name="email"
                                 placeholder="Email"
-                                className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-blue-400"
+                                className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-gray-400"
                                 value={formData.email}
                                 onChange={handleChange}
                             />
@@ -197,7 +197,7 @@ export default function ContactPage() {
                                 type="text"
                                 name="subject"
                                 placeholder="Subject"
-                                className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-blue-400"
+                                className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-gray-400"
                                 value={formData.subject}
                                 onChange={handleChange}
                             />
@@ -205,13 +205,13 @@ export default function ContactPage() {
                                 name="message"
                                 placeholder="Message"
                                 rows="6"
-                                className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 outline-blue-400"
+                                className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 outline-gray-400"
                                 value={formData.message}
                                 onChange={handleChange}
                             ></textarea>
                             <button
                                 type="submit"
-                                className="text-white bg-blue-400 hover:bg-blue-400 tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full !mt-6"
+                                className="text-white bg-gray-400 hover:bg-gray-400 tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full !mt-6"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"

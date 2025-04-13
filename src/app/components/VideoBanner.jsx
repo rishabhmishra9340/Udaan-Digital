@@ -2,16 +2,17 @@
 
 const VideoBanner = () => {
   return (
-    <div className="relative w-5/5 h-[60vh] md:h-[80vh]">
+    <div className="relative w-full h-[60vh] md:h-[80vh]">
       {/* Embed YouTube video using iframe */}
-      <iframe
-        class="w-full h-full"
+      <video
+        className="w-full h-full object-cover"
         src="/final render.mp4"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
+        autoPlay
+        muted
+        loop
+        playsInline
+        controls
+      />
 
       {/* Overlay for dark background */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>

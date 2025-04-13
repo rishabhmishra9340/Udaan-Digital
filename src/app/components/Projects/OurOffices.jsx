@@ -9,7 +9,7 @@ const OurOffices = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/projects");
+        const response = await axios.get("http://udaan-digital-backend.vercel.app/api/projects");
         setOffices(response.data.projects);
       } catch (error) {
         console.error("Error fetching projects:", error);
@@ -21,6 +21,7 @@ const OurOffices = () => {
 
   return (
     <>
+    <div className="bastia-font text-4xl p-12">Projects</div>
       <div className="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 m-auto">
         {offices.map((office) => (
           <Link
@@ -56,7 +57,7 @@ const OurOffices = () => {
             {/* Text Above */}
             <div className="absolute z-10 top-0 left-0 w-full px-4 py-3 text-white">
               <span className="block text-sm opacity-75">{office.location}</span>
-              <span className="block font-semibold text-sm">{office.name}</span>
+              <span className="block font-semibold text-sm bastia-font">{office.name}</span>
             </div>
 
             {/* Dark overlay */}

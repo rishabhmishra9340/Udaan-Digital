@@ -28,8 +28,8 @@ export const ProductService = {
             {
                 id: '1000',
                 code: 'f230fh0g3',
-                name: 'Bamboo Watch',
-                description: 'Product Description lorem hello device bdb bdbd bdbdbnr rnnrnrn Description lorem hello device bdb bdbd bdbdbnr rnnrnrn',
+                name: 'Outstanding Results',
+                description: 'The quality of the final product exceeded our expectations. We’ve already recommended them to others.',
 
                 price: 65,
                 category: 'Accessories',
@@ -40,26 +40,26 @@ export const ProductService = {
             {
                 id: '1000',
                 code: 'f230fh0g3',
-                name: 'Bamboo Watch',
-                description: 'Product Description lorem hello device bdb bdbd bdbdbnr rnnrnrn Description lorem hello device bdb bdbd bdbdbnr rnnrnrn',
-   
+                name: 'Great Communication',
+                description: 'They kept us in the loop throughout the entire process, which made everything smooth and stress-free.',
+
                 price: 65,
                 category: 'Accessories',
                 quantity: 24,
                 inventoryStatus: 'INSTOCK',
                 rating: 5
             },
-         
+
             {
                 id: '1029',
                 code: 'gwuby345v',
-                name: 'Yoga Set dev',
-                description: 'Product Description lorem hello device bdb bdbd bdbdbnr rnnrnrn Description lorem hello device bdb bdbd bdbdbnr rnnrnrn',
-  
+                name: 'Highly Recommended',
+                description: 'Great Opportunity|',
+
                 price: 20,
-                category: 'Fitness',
+                category: '',
                 quantity: 25,
-                inventoryStatus: 'INSTOCK',
+                inventoryStatus: '',
                 rating: 8,
                 orders: [
                     {

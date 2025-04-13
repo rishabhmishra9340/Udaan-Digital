@@ -12,8 +12,13 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        bastia: ['Bastia', 'sans-serif'],  // Adding Bastia font
+        futura: ['Futura', 'sans-serif'],  // Adding Futura font
+      },
     },
   },
   plugins: [],
 };
+
 export default config;

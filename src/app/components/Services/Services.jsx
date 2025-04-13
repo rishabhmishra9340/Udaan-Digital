@@ -17,7 +17,7 @@ export default function Services() {
               className="w-full h-[500px] rounded-lg shadow-lg"
             />
             <div className="absolute top-0 left-0 w-full p-4 bg-black bg-opacity-50 text-white">
-              <h2 className="text-3xl font-bold">Urban & Infrastructure Planning – Sustainable Cities, Smarter Solutions</h2>
+              <h2 className="text-2xl font-bold">Urban & Infrastructure Planning – Sustainable Cities, Smarter Solutions</h2>
             </div>
             {/* List - Hidden by default, appears on hover */}
             <div className="absolute m-2 bottom-4 left-0 bg-black p-4 bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white">
@@ -42,7 +42,7 @@ export default function Services() {
               className="w-full h-[500px] rounded-lg shadow-lg"
             />
             <div className="absolute top-0 left-0 w-full p-4 bg-black bg-opacity-50 text-white">
-              <h2 className="text-3xl font-bold">Architectural Design – Shaping Dreams into Reality</h2>
+              <h2 className="text-2xl font-bold">Architectural Design – Shaping Dreams into Reality</h2>
             </div>
             {/* List - Hidden by default, appears on hover */}
             <div className="absolute m-2 bottom-4 left-0 bg-black text-white p-4 bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -69,7 +69,7 @@ export default function Services() {
               className="w-full h-[500px] rounded-lg shadow-lg"
             />
             <div className="absolute top-0 left-0 w-full p-4 bg-black bg-opacity-50 text-white">
-              <h2 className="text-3xl font-bold">Building Information Modeling (BIM) – Precision, Efficiency, and Collaboration</h2>
+              <h2 className="text-2xl font-bold">Building Information Modeling (BIM) – Precision, Efficiency, and Collaboration</h2>
             </div>
             {/* List - Hidden by default, appears on hover */}
             <div className="absolute m-2 bottom-4 left-0 text-white bg-black p-4 bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -94,7 +94,7 @@ export default function Services() {
               className="w-full h-[500px] rounded-lg shadow-lg"
             />
             <div className="absolute top-0 left-0 w-full p-4 bg-black bg-opacity-50 text-white">
-              <h2 className="text-3xl font-bold">Master Planning – Designing the Future, Today</h2>
+              <h2 className="text-2xl font-bold">Master Planning – Designing the Future, Today</h2>
             </div>
             {/* List - Hidden by default, appears on hover */}
             <div className="absolute m-2 bottom-4 text-white left-0 bg-black p-4 bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -118,7 +118,7 @@ export default function Services() {
               className="w-full h-[500px] rounded-lg shadow-lg"
             />
             <div className="absolute top-0 left-0 w-full p-4 bg-black bg-opacity-50 text-white">
-              <h2 className="text-3xl font-bold">Interior Design – Transforming Spaces, Elevating Lifestyles</h2>
+              <h2 className="text-2xl font-bold">Interior Design – Transforming Spaces, Elevating Lifestyles</h2>
             </div>
             {/* List - Hidden by default, appears on hover */}
             <div className="absolute m-2 bottom-4 text-white left-0 bg-black p-4 bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
