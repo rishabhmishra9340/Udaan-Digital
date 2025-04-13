@@ -13,7 +13,7 @@ const ProjectDetail = () => {
 
     const fetchProject = async () => {
       try {
-        const response = await axios.get(`http://udaan-digital-backend.vercel.app/api/project/${id}`);
+        const response = await axios.get(`https://udaan-digital-backend.vercel.app/api/project/${id}`);
         if (response.data.success) {
           setProject(response.data.project);
         } else {
