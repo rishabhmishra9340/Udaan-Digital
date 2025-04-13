@@ -89,7 +89,8 @@ export default function Footer() {
                   <h2 className="text-2xl font-bold text-gray-900">Get the latest news!</h2>
 
                   <p className="mt-4 text-gray-500">
-                    "Stay connected for the latest updates and insights."
+                    <p className="mt-4 text-gray-500">
+  'Stay connected for the latest updates and insights.'</p>
                   </p>
                 </div>
               </div>
