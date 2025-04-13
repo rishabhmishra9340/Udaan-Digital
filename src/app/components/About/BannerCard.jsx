@@ -23,7 +23,7 @@ const ContentSection = ({ section }) => {
               <li>Client-Centric Vision: Your dreams shape our blueprints, ensuring personalized and meaningful designs.</li>
               <li>Excellence in Execution: We blend craftsmanship and technology to deliver outstanding results.</li>
             </ul>
-            At Udaan Studio, we don’t just design spaces—we create experiences that resonate with nature and modern aspirations. Whether you seek a dream home, a dynamic workspace, or a transformative urban development, we are here to elevate your vision
+            At Udaan Studio, we dont just design spaces—we create experiences that resonate with nature and modern aspirations. Whether you seek a dream home, a dynamic workspace, or a transformative urban development, we are here to elevate your vision
           </div>
         </div>
       );
@@ -41,7 +41,7 @@ const ContentSection = ({ section }) => {
             <p className='m-5 p-2'>Ar. Harsh Prajapat is the visionary behind Udaan Studio, leading the firm with a passion for innovative, sustainable, and people-centric architecture. With a deep understanding of design, urban planning, and real estate, he envisions redefining the architectural landscape of India through creativity and excellence.</p>
             <p className='p-2 m-5 '> A graduate of NIT Bhopal (Maulana Azad National Institute of Technology, Bhopal), Ar. Harsh combines technical expertise with practical experience to craft functional, aesthetically inspiring, and eco-friendly spaces. His work spans residential, commercial, and urban planning projects, ensuring each structure tells a unique story of design and purpose.</p>
              
-            <p className='p-2 m-5 '> Driven by the philosophy of "Uplifting Designs Advancing Architecture in Nature’s Embrace (UDAAN)," he believes in blending architecture with sustainability, creating spaces that inspire and endure. His ambition extends beyond just designing buildings—he strives to make a lasting impact on India's urban and architectural landscape, contributing to a future where thoughtful design shapes thriving communities and modern cities.</p>
+            <p className='p-2 m-5 '> Driven by the philosophy of "Uplifting Designs Advancing Architecture in Natures Embrace (UDAAN)," he believes in blending architecture with sustainability, creating spaces that inspire and endure. His ambition extends beyond just designing buildings—he strives to make a lasting impact on India's urban and architectural landscape, contributing to a future where thoughtful design shapes thriving communities and modern cities.</p>
             <div className='p-2 m-5 '> With a relentless pursuit of quality, innovation, and client satisfaction, he continues to push boundaries, setting new benchmarks in architecture and planning in India.</div>
           </div>
         </div>
