@@ -22,7 +22,7 @@ export default function Home() {
           </div>
         </div>
         <Image 
-          src="/bg.jpg" 
+          src="/homebg.jpg" 
           alt="Leafs" 
           className="w-full h-48 object-cover sm:h-screen sm:w-4/12"
           width={634} 
