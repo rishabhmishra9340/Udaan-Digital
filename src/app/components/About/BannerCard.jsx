@@ -15,7 +15,7 @@ const ContentSection = ({ section }) => {
               transform spaces through innovative, sustainable, and
               client-centric designs.
             </p>
-            <p>
+            <p className='pt-2'>
               &quot;Udaan&quot; (meaning &quot;Flight&quot; in Hindi) represents
               the studio&apos;s aspiration to push the boundaries of
               architecture, design, and real estate, taking creativity to new
