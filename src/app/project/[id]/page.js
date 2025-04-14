@@ -1,6 +1,7 @@
 'use client';
 import { useParams } from 'next/navigation'; // Correct import from 'next/navigation' in App Directory
 import React, { useState, useEffect } from 'react';
+import Navbar from '../../components/Navbar'
 import axios from 'axios';
 
 const ProjectDetail = () => {
@@ -32,6 +33,8 @@ const ProjectDetail = () => {
   if (!project) return <div>Loading...</div>;
 
   return (
+    <>
+    <Navbar/>
     <div className="p-6">
 
       <img src={project.image} alt={project.name} className="mt-4 w-full h-auto" />
@@ -41,6 +44,7 @@ const ProjectDetail = () => {
       <p className="text-gray-600 text-2xl futura-font p-4">{project.description}</p>
       <p className="text-teal-500 font-medium text-2xl futura-font p-4">{project.location}</p>
     </div>
+    </>
   );
 };
 

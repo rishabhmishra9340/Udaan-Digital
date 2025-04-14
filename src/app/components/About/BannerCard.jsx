@@ -7,8 +7,8 @@ const ContentSection = ({ section }) => {
     case "about":
       return (
         <div>
-          <h2 className="text-2xl bastia-font">About Us</h2>
-          <div className="mt-4 text-xl max-w-4xl max-w-[100%] futura-font">
+          <h2 className="text-3xl font-bold">About Us</h2>
+          <div className="mt-4 text-md max-w-4xl max-w-[100%] ">
             <p>
               Udaan Studio is a forward-thinking architecture and real estate
               company, founded in 2024 by Ar. Harsh Prajapat, with a mission to
@@ -74,12 +74,12 @@ const ContentSection = ({ section }) => {
               height={384}
               className="rounded-md object-cover"
             />
-            <p className="text-5xl max-w-96 bastia-font">
+            <p className="text-5xl max-w-96">
               Meet our Founder, CEO &amp; Principal Architect
             </p>
           </div>
-          <div className="futura-font">
-            <p className="m-5 p-2">
+          <div className="">
+            <p className="m-4 p-2">
               Ar. Harsh Prajapat is the visionary behind Udaan Studio, leading
               the firm with a passion for innovative, sustainable, and
               people-centric architecture. With a deep understanding of design,
@@ -87,7 +87,7 @@ const ContentSection = ({ section }) => {
               architectural landscape of India through creativity and
               excellence.
             </p>
-            <p className="p-2 m-5">
+            <p className="p-2 m-4">
               A graduate of NIT Bhopal (Maulana Azad National Institute of
               Technology, Bhopal), Ar. Harsh combines technical expertise with
               practical experience to craft functional, aesthetically inspiring,
@@ -95,7 +95,7 @@ const ContentSection = ({ section }) => {
               and urban planning projects, ensuring each structure tells a
               unique story of design and purpose.
             </p>
-            <p className="p-2 m-5">
+            <p className="p-2 m-4">
               Driven by the philosophy of &quot;Uplifting Designs Advancing
               Architecture in Nature&apos;s Embrace (UDAAN),&quot; he believes in
               blending architecture with sustainability, creating spaces that
@@ -104,7 +104,7 @@ const ContentSection = ({ section }) => {
               and architectural landscape, contributing to a future where
               thoughtful design shapes thriving communities and modern cities.
             </p>
-            <div className="p-2 m-5">
+            <div className="p-2 m-4">
               With a relentless pursuit of quality, innovation, and client
               satisfaction, he continues to push boundaries, setting new
               benchmarks in architecture and planning in India.
